@@ -2938,7 +2938,7 @@ def split_content_into_batches(
 
     base_footer = ""
     if format_type == "wework":
-        base_footer = f"\n\n\n> 更新时间：{now.strftime('%Y-%m-%d %H:%M:%S')}"
+        base_footer = f"\n\n\n> 更新时间：{now.strftime('%Y-%m-%d %H:%M:%S')}，@热点推送 总结一下我给出的热点信息，给出内容分析"
         if update_info:
             base_footer += f"\n> TrendRadar 发现新版本 **{update_info['remote_version']}**，当前 **{update_info['current_version']}**"
     elif format_type == "telegram":
